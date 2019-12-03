@@ -8,13 +8,13 @@ import java.io.IOException;
  * Created by cdx on 2019/12/3.
  * desc:
  */
-@WebFilter("/*")//拦截路径
-public class FilterDemo1 implements Filter {
+//@WebFilter("/*")
+public class FilterDemo2 implements Filter {
     private static final String TAG = "FilterDemo1";
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
-
+        System.out.println("init....");
     }
 
     @Override
@@ -28,6 +28,6 @@ public class FilterDemo1 implements Filter {
 
     @Override
     public void destroy() {
-
+        System.out.println("destroy....");
     }
 }
