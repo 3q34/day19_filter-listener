@@ -8,7 +8,7 @@ import java.io.IOException;
  * Created by cdx on 2019/12/3.
  * desc:
  */
-@WebFilter("/*")//拦截路径
+//@WebFilter("/*")//拦截路径
 public class FilterDemo1 implements Filter {
     private static final String TAG = "FilterDemo1";
 

@@ -3,12 +3,22 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
-    <filter>
-        <filter-name>demo1</filter-name>
-        <filter-class>cn.itcast.web.filter.FilterDemo2</filter-class>
-    </filter>
-    <filter-mapping>
-        <filter-name>demo1</filter-name>
-        <url-pattern>/*</url-pattern>
-    </filter-mapping>
+<!--    <filter>-->
+<!--        <filter-name>demo1</filter-name>-->
+<!--        <filter-class>cn.itcast.web.filter.FilterDemo2</filter-class>-->
+<!--    </filter>-->
+<!--    <filter-mapping>-->
+<!--        <filter-name>demo1</filter-name>-->
+<!--        &lt;!&ndash;        拦截路径设置&ndash;&gt;-->
+<!--        <url-pattern>/*</url-pattern>-->
+<!--        &lt;!&ndash;        拦截方式设置&ndash;&gt;-->
+<!--&lt;!&ndash;        <dispatcher>FORWARD</dispatcher>&ndash;&gt;-->
+<!--    </filter-mapping>-->
+<!--    <listener>-->
+<!--        <listener-class>cn.itcast.web.listener.ListenerDemo1</listener-class>-->
+<!--    </listener>-->
+<!--    <context-param>-->
+<!--        <param-name>contextConfiglocation</param-name>-->
+<!--        <param-value>/WEB-INF/classes/applicationContext.xml</param-value>-->
+<!--    </context-param>-->
 </web-app>

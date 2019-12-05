@@ -10,7 +10,7 @@ import java.io.IOException;
  */
 //@WebFilter("/*")
 public class FilterDemo2 implements Filter {
-    private static final String TAG = "FilterDemo1";
+
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
@@ -19,7 +19,7 @@ public class FilterDemo2 implements Filter {
 
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
-        System.out.println("filterDemo1被执行了。。。。");
+        System.out.println("filterDemo2被执行了。。。。");
         ///放行
         filterChain.doFilter(servletRequest, servletResponse);
 

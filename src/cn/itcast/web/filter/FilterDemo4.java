@@ -8,7 +8,7 @@ import java.io.IOException;
  * Created by cdx on 2019/12/3.
  * desc:浏览器直接请求资源时，过滤器执行
  */
-@WebFilter(value = "/*", dispatcherTypes = DispatcherType.REQUEST)
+//@WebFilter(value = "/*", dispatcherTypes = DispatcherType.REQUEST)
 public class FilterDemo4 implements Filter {
     /*
      * @author: cdx
@@ -34,9 +34,9 @@ public class FilterDemo4 implements Filter {
      * @throws:
      */
     public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain) throws ServletException, IOException {
-        System.out.println("filterdemo3执行啦。。。");
-        //chain.doFilter(req, resp);
-        System.out.println("filterdemo3回来啦。。。");
+        System.out.println("filterdemo4执行啦。。。");
+        chain.doFilter(req, resp);
+        System.out.println("filterdemo4回来啦。。。");
     }
 
     /*

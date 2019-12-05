@@ -8,7 +8,7 @@ import java.io.IOException;
  * Created by cdx on 2019/12/3.
  * desc:
  */
-@WebFilter("/index.jsp")
+//@WebFilter("/index.jsp")
 public class FilterDemo3 implements Filter {
     /*
      * @author: cdx
@@ -35,7 +35,7 @@ public class FilterDemo3 implements Filter {
      */
     public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain) throws ServletException, IOException {
         System.out.println("filterdemo3执行啦。。。");
-        //chain.doFilter(req, resp);
+        chain.doFilter(req, resp);
         System.out.println("filterdemo3回来啦。。。");
     }
 
